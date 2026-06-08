@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="refresh" content="3;url=https://t.ly/HepBetBdm">
+  <title>Hepbet'e Yönlendiriliyor...</title>
+  <link rel="icon" type="image/png" href="https://hepbet-giris.vercel.app/images/hepbet_favicon.webp" sizes="96x96">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      font-family: 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: radial-gradient(ellipse at center, #0e1525 0%, #080d1a 100%);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      position: relative;
+    }
+
+    .bg-glow {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(45,180,255,0.18) 0%, transparent 65%);
+      filter: blur(50px);
+      animation: pulse 3s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+      50% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+    }
+
+    .bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(45,180,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45,180,255,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+      pointer-events: none;
+    }
+
+    .logo {
+      font-size: 72px;
+      font-weight: 900;
+      letter-spacing: -2.5px;
+      background: linear-gradient(135deg, #2db4ff 0%, #ffffff 50%, #2db4ff 100%);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: shimmer 2.5s ease-in-out infinite;
+      filter: drop-shadow(0 0 30px rgba(45,180,255,0.6));
+      margin-bottom: 10px;
+      z-index: 2;
+      line-height: 1;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .tagline {
+      color: rgba(255,255,255,0.55);
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 56px;
+      z-index: 2;
+      font-weight: 500;
+    }
+
+    .progress-wrap {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      margin-bottom: 32px;
+      z-index: 2;
+    }
+
+    .progress-ring {
+      width: 130px;
+      height: 130px;
+      transform: rotate(-90deg);
+    }
+
+    .progress-ring__bg {
+      stroke: rgba(45,180,255,0.15);
+      stroke-width: 5;
+      fill: none;
+    }
+
+    .progress-ring__bar {
+      stroke: #2db4ff;
+      stroke-width: 5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-dasharray: 364.42;
+      stroke-dashoffset: 364.42;
+      animation: fill 3s linear forwards;
+      filter: drop-shadow(0 0 10px rgba(45,180,255,0.7));
+    }
+
+    @keyframes fill {
+      to { stroke-dashoffset: 0; }
+    }
+
+    .progress-icon {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      animation: spin 1.5s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    .status {
+      font-size: 17px;
+      color: #fff;
+      margin-bottom: 6px;
+      z-index: 2;
+      font-weight: 500;
+    }
+
+    .status .dots::after {
+      content: '';
+      animation: dots 1.5s steps(4, end) infinite;
+    }
+
+    @keyframes dots {
+      0% { content: ''; }
+      25% { content: '.'; }
+      50% { content: '..'; }
+      75% { content: '...'; }
+    }
+
+    .subtext {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      z-index: 2;
+    }
+
+    .manual-link {
+      margin-top: 48px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      z-index: 2;
+    }
+
+    .manual-link a {
+      color: #2db4ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    .manual-link a:hover { opacity: 0.7; }
+
+    .footer-disclaimer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 480px) {
+      .logo { font-size: 52px; }
+      .tagline { font-size: 11px; letter-spacing: 3px; margin-bottom: 40px; }
+      .progress-wrap, .progress-ring { width: 100px; height: 100px; }
+      .progress-ring__bar { stroke-dasharray: 282.74; stroke-dashoffset: 282.74; }
+      .progress-icon { width: 32px; height: 32px; }
+      .status { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="bg-glow"></div>
+  <div class="bg-grid"></div>
+
+  <div class="logo">Hepbet</div>
+  <div class="tagline">Resmi Siteye Yönlendirme</div>
+
+  <div class="progress-wrap">
+    <svg class="progress-ring" viewBox="0 0 130 130">
+      <circle class="progress-ring__bg" cx="65" cy="65" r="58"></circle>
+      <circle class="progress-ring__bar" cx="65" cy="65" r="58"></circle>
+    </svg>
+    <svg class="progress-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="#2db4ff" opacity="0.9"/>
+    </svg>
+  </div>
+
+  <div class="status">Yönlendiriliyor<span class="dots"></span></div>
+  <div class="subtext">Resmi Hepbet sayfasına geçiş yapılıyor</div>
+
+  <div class="manual-link">
+    Sayfa açılmıyor mu? <a href="https://t.ly/HepBetBdm" rel="nofollow">Buraya tıkla</a>
+  </div>
+
+  <div class="footer-disclaimer">18+ · Sorumlu Oyun</div>
+</div>
+
+<script>
+  setTimeout(function() {
+    window.location.href = 'https://t.ly/HepBetBdm';
+  }, 3000);
+</script>
+
+</body>
+</html>
